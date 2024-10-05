@@ -167,6 +167,12 @@ address {
   padding-bottom: 188px;
   padding-left: 472px; */
 }
+.main_page .container {
+  display: flex;
+  justify-content: center; /* Центрує по горизонталі */
+  align-items: center; /* Центрує по вертикалі */
+  flex-direction: column; /* Розташовує елементи одне під одним (по вертикалі) */
+}
 .hero_title {
   font-weight: 700;
   font-size: 56px;
@@ -191,7 +197,7 @@ address {
   border: none;
   border-radius: 4px;
   margin-top: 48px;
-  margin-left: 164px;
+  /* margin-left: 164px; */
 }
 .cta:hover {
   background-color: #404bbf;
