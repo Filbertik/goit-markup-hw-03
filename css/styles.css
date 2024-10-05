@@ -1,8 +1,37 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Решта коду */
+
 a {
   text-decoration: none;
 }
 ul {
   list-style: none;
+}
+/* Обнулення дефолтних маржінів для заголовків і параграфів */
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+/* Обнулення маржінів і падінгів для списків */
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
+
+/* Зробити зображення блочними елементами */
+img {
+  display: block;
+  max-width: 100%; /* Для адаптивності */
+  height: auto; /* Зберігає пропорції зображення */
 }
 
 body {
@@ -161,4 +190,17 @@ footer {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+}
+/* ДЗ 3 (три) блоки флекси до .body скиидання відступів і псевдокласи  */
+
+.container {
+  max-width: 1440px; /* Максимальна ширина контейнера */
+  padding-left: 141px; /* Внутрішній відступ зліва */
+  padding-right: 141px; /* Внутрішній відступ справа */
+  margin-left: auto; /* Центрує контейнер по горизонталі */
+  margin-right: auto; /* Центрує контейнер по горизонталі */
+}
+.page-header .container {
+  display: flex;
+  justify-content: space-between;
 }
